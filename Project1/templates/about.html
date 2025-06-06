@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<h1 class="text-4xl font-bold text-center mb-6 text-white bg-black">About Felix ITs</h1>
+
+<!-- Centered External Image -->
+<div class="flex justify-center mb-6">
+  <img src="{{ MEDIA_URL }}images/about_us.jpg" alt="About Felix ITs" class="w-64 h-auto rounded-lg shadow-md">
+</div>
+
+<p class="mb-4 text-black">
+  FELIX_ITS is dedicated to providing high-quality IT courses that empower learners with the skills they need to succeed in today's technology-driven world.
+</p>
+
+<p class="text-black">
+  Our mission is to deliver practical, hands-on training in programming, networking, data science, and more — designed for beginners and professionals alike. We believe in fostering a community where knowledge sharing and continuous learning are at the core.
+</p>
+<br>
+<br>
+<div class="mermaid ">
+<h4 class="text-xl font-bold text-center mb-8 text-black bg-red-600"> Student Journey at Felix</h4>
+<div class="flex justify-center mb-6">
+<img src="{{ MEDIA_URL }}images/Felix_It.png" alt="About Felix ITs" class="w-80 h-auto rounded-lg shadow-md">
+</div>
+    
+
+
+</div>
+
+{% endblock %}
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+

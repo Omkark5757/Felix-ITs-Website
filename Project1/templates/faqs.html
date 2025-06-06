@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}FAQs{% endblock %}
+
+{% block content %}
+<h1 class="text-4xl font-bold text-center mb-6 text-white bg-black">Frequently Asked Questions</h1>
+<div class="max-w-4xl mx-auto p-6 mt-10">
+  
+
+  <div class="space-y-4">
+    <details class="bg-gray-100 p-4 rounded-md shadow-sm">
+      <summary class="font-semibold cursor-pointer">What courses do you offer?</summary>
+      <p class="mt-2 text-gray-700">We offer a range of technical courses including Full Stack Development, Data Science, Machine Learning, and UI/UX Design.</p>
+    </details>
+
+    <details class="bg-gray-100 p-4 rounded-md shadow-sm">
+      <summary class="font-semibold cursor-pointer">How can I apply for admission?</summary>
+      <p class="mt-2 text-gray-700">You can apply by filling out the admission form available on the "Enroll Now" page. Our team will get in touch with you shortly after submission.</p>
+
+</details>
+
+    <details class="bg-gray-100 p-4 rounded-md shadow-sm">
+      <summary class="font-semibold cursor-pointer">Do you provide placement support?</summary>
+      <p class="mt-2 text-gray-700">Yes, we provide placement support through our network of partner companies and regular recruitment drives.</p>
+    </details>
+
+    <details class="bg-gray-100 p-4 rounded-md shadow-sm">
+      <summary class="font-semibold cursor-pointer">Can fee be paid in installments?</summary>
+      <p class="mt-2 text-gray-700">Yes, the fee can be paid in two equal and easy installments.</p>
+    </details>
+  </div>
+</div>
+{% endblock %}
